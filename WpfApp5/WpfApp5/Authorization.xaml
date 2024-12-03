@@ -1,0 +1,29 @@
+﻿<Page x:Class="WpfApp5.Authorization"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp5"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Authorization">
+
+    <Grid Background="White" Margin="0,0,-620,-223">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" MinHeight="245"/>
+            <RowDefinition Height="auto" MinHeight="0"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="550,11,0,0" TextWrapping="Wrap" Text="" Width="336" Height="24" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+        <TextBox TextWrapping="Wrap" Text="" Margin="550,71,0,0" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="336" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="Регистрация" Margin="570,206,0,-155" Click="OnSignUp" HorizontalAlignment="Left" Width="100" Grid.Row="2" Grid.ColumnSpan="2"/>
+        <Button Content="Войти" Margin="791,0,0,-155" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="76" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="Забыл пароль" Margin="0,0,110,-234" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="92" Grid.Column="1" Grid.Row="2"/>
+        <Label Grid.Column="1" Content="Логин" HorizontalAlignment="Left" Margin="490,11,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <Label Grid.Column="1" Content="Пароль" HorizontalAlignment="Left" Margin="488,69,0,0" Grid.Row="2" VerticalAlignment="Top" Width="57"/>
+    </Grid>
+</Page>
